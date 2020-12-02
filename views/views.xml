@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+   <record id="view_order_form_inherit" model="ir.ui.view">
+        	<field name="name">Sale Warehouse Id</field>
+        	<field name="model">res.users</field>
+        	<field name="inherit_id" ref="base.view_users_form"/>
+        	<field name="arch" type="xml">
+            	<field name="partner_id" position="after">
+                		<field name="warehouse_id"/>
+            	</field>
+        	</field>
+</record>
+  </data>
+</odoo>
